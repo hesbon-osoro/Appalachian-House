@@ -1,0 +1,204 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 10
+   Case Problem 3
+   
+
+   Appalachian House Layout Style Sheet
+
+   Filename: ah_layout.css
+   
+*/
+
+/* HTML and Body Styles */
+
+html {
+  background: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background: white;
+  max-width: 1024px;
+  min-width: 420px;
+  margin: 0px auto;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+/* Header Styles */
+
+header {
+  border-bottom: 1px solid rgb(41, 170, 226);
+}
+
+body > header {
+  width: 100%;
+}
+
+img#logoImg {
+  display: block;
+  width: 100%;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgb(41, 170, 226);
+  height: 40px;
+}
+
+nav.horizontal ul li {
+  -webkit-flex: 0 1 80px;
+  flex: 0 1 80px;
+  margin: 10px;
+}
+
+nav.horizontal ul li a {
+  color: rgb(74, 50, 6);
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 50% 0%;
+}
+
+nav.horizontal ul li a:hover,
+nav.horizontal ul li a:active {
+  color: rgb(211, 211, 211);
+  text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+}
+
+/* Vertical Navigation Styles */
+
+nav.vertical {
+  background-color: rgb(180, 214, 112);
+  padding-top: 25px;
+  padding-left: 20px;
+  width: 140px;
+}
+
+nav.vertical ul li {
+  line-height: 1.8em;
+}
+
+nav.vertical ul li a {
+  color: rgb(61, 61, 61);
+}
+
+nav.vertical ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+
+section {
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+section > h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+  color: #6bd51b;
+  text-shadow: black 1px 1px 1px;
+  padding: 15px 0px;
+  font-family: "Century Gothic", sans-serif;
+  text-align: left;
+}
+
+/* Donation Summary Styles */
+
+div#donationSummary table {
+  font-size: 1.5em;
+  border-collapse: collapse;
+  color: rgb(81, 81, 81);
+  margin: 10px 0px;
+}
+
+div#donationSummary table th,
+div#donationSummary table td {
+  padding: 5px;
+  vertical-align: top;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+div#donationSummary table th {
+  font-weight: normal;
+  text-align: left;
+  background: rgb(180, 214, 112);
+}
+
+div#donationSummary table td {
+  text-align: right;
+}
+
+/* Donor Table Styles */
+
+div#donorTable table {
+  font-size: 0.9em;
+  border-collapse: collapse;
+  color: rgb(81, 81, 81);
+  margin: 10px 0px 30px;
+}
+
+div#donorTable table caption {
+  font-size: 2.5em;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+  color: #6bd51b;
+  text-shadow: black 1px 1px 1px;
+  padding: 15px 0px;
+  font-family: "Century Gothic", sans-serif;
+  text-align: left;
+}
+
+div#donorTable table th {
+  background-color: rgba(41, 170, 226, 0.5);
+  font-weight: normal;
+  font-size: 1.3em;
+  padding: 5px 6px;
+}
+
+div#donorTable table tr:nth-of-type(even) {
+  background-color: rgba(180, 214, 112, 0.4);
+}
+
+div#donorTable th,
+div#donorTable td {
+  padding: 2px 6px;
+  border: 1px solid rgb(81, 81, 81);
+  vertical-align: top;
+}
+
+div#donorTable tr td:first-of-type {
+  text-align: right;
+}
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+}
+
+footer p {
+  color: rgb(211, 211, 211);
+  font-size: 0.9em;
+  text-align: center;
+  background-color: rgb(0, 113, 187);
+  margin: 0px;
+  padding: 10px 0px;
+}
